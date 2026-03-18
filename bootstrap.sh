@@ -4,7 +4,7 @@ set -euo pipefail
 # kind create cluster --config cluster.yml
 
 kubectl apply -f .infrastructure/namespace.yml
-kubectl apply -f .infrastructure/confgiMap.yml
+kubectl apply -f .infrastructure/configMap.yml
 kubectl apply -f .infrastructure/secret.yml
 
 kubectl apply -f .infrastructure/mysql-namespace.yml
